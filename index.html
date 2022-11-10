@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:title" content="Space Battle Game"/>
+    <meta name="author" content="Charles Knapp" />
+    <title>Space Battle Game</title>
+    <link rel="stylesheet" type="text/css" href="spacestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="controls">
+      <div class="img">
+        <img style="max-width:300px;height:auto;" src="https://media0.giphy.com/media/QZnSm4jxdvJQDqL5R4/giphy.gif" alt="Spaceship">
+      </div>
+        <h3 id="title">Can you save the Earth and destroy all 6 Alien ships?</h3>
+      <div class="instruction-box">
+        <p id="instructions">
+          Open your browser console to play the game<br>
+          <hr>
+          <h3>⚔️ Attacking:</h3>
+          To attack with lasers, type <span id="laserAttack" style="color:gold;">myShip.laser(alien1)</span><br>
+          To attack with missles, type <span id="missileAttack" style="color:gold;">myShip.missile(alien1)</span><br>
+          Each alien ship is named <span style="color:orange;">alien1</span>, <span style="color:orange;">alien2</span>, <span style="color:orange;">alien3</span> and so on... attack them by entering their names in your attack sequence.<br><br>
+          <hr>
+          <h3>❤️ Check Health:</h3>
+          To check your hull strength, type <span style="color:gold;">myShip.announceHealth()</span><br>
+          <br>
+          <hr>
+          <h3>🛠️ Repairs:</h3>
+          To repair your hull, type <span style="color:gold;">myShip.repairShip()</span><br><br>
+      </div>
+
+    </div>
+    <div class="resetbox">
+      <div class="resetlink">
+        <a class="reset" href="/">Reset Game</a>
+      </div>
+    </div>
+
+    <script src="spacegame.js"></script>
+  </body>
+</html>
